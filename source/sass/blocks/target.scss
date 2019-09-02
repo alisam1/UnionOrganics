@@ -1,0 +1,85 @@
+.target
+{
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 520px;
+
+}
+
+
+
+.target__title
+{
+    width: 90%;
+    max-width: 1170px; 
+    margin: 0 auto;
+    font-family:$font-family-bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    padding-top: 90px;
+    padding-bottom: 0px;
+
+}
+
+
+
+.target__content
+{
+    width: 90%;
+    max-width: 1170px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.target-left, .target-right
+{
+    width: 50%;
+    color: #fff;
+    padding-top: 40px;
+    position: relative;
+}
+
+
+
+.target-left__text, .target-right__text
+{
+    font-family: $font-family;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    padding-top: 20px;
+    position: relative;
+    &--yellow
+    {
+        color: #f7ce4b;
+    }
+}
+
+.target-left::after
+{
+    content: "";
+    background-image: url("../img/ingir.png");
+    width: 200px;
+    height: 380px;
+    position: absolute;
+    bottom: 0px;
+    top: -30px;
+    left: 350px;
+}
+
+.target-left li {
+ color: #ffda00; 
+}
+
+li span {
+ color: #fff;
+ padding-left: 30px;
+}

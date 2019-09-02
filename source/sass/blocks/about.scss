@@ -1,0 +1,75 @@
+.page_one
+{
+    min-height: 100vh;
+}
+
+.page_two
+{
+    min-height: 100vh;
+}
+
+.about
+{
+    background-image: url("../img/bg_palm.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    
+
+}
+
+.about__title
+{
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+    font-family: $font-bebas-bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #fff;
+
+}
+
+.about__content
+{
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+
+.left, .right
+{
+    width: 50%;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.left__title, .right__title
+{
+    font-family: $font-family-bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+
+.left__text, .right__text
+{
+    font-family: $font-family;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    width: 350px;
+    padding-top: 20px;
+}

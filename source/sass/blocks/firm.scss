@@ -1,0 +1,259 @@
+.firm__text
+{
+    font-family: $font-family;
+    color: #3a3a3a;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.firm__text span
+{
+    display: block;
+}
+
+
+.firm__content
+{
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.firm__block
+{
+    width: 230px;
+    height: 250px;
+    box-shadow: 0px 6px 49px 0px rgba(0, 0, 0, 0.14);
+}
+
+.firm__block img
+{
+    max-width: 230px;
+}
+
+.top
+{
+    position:relative;
+    }
+
+
+.top span 
+{
+    position: absolute;
+    background-color: #fff;
+    width: 125px;
+    height: 90px;
+    top: 160px;
+    font-family: $font-family-bold;
+    color: #3a3a3a;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-left: 35px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+
+.bottom
+{
+    position:relative;
+    }
+
+
+.bottom span 
+{
+    position: absolute;
+    background-color: #fff;
+    width: 125px;
+    height: 90px;
+    top: 160px;
+    font-family: $font-family-bold;
+    color: #3a3a3a;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+
+/* Img rotate */
+
+.img_container {
+    position:relative;
+    width: 230px;
+    height: 250px;
+    margin:0 auto;
+    box-shadow: 0px 6px 49px 0px rgba(0, 0, 0, 0.14);
+    }
+    
+    .img_container img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity  0.5s ease-in-out;
+    -o-transition: opacity  0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    }
+    
+    @-webkit-keyframes cf3FadeInOut {
+    0% {
+    opacity:1;
+    }
+    45% {
+    opacity:1;
+    }
+    55% {
+    opacity:0;
+    }
+    100% {
+    opacity:0;
+    }
+    }
+    
+    @-moz-keyframes cf3FadeInOut {
+    0% {
+    opacity:1;
+    }
+    45% {
+    opacity:1;
+    }
+    55% {
+    opacity:0;
+    }
+    100% {
+    opacity:0;
+    }
+    }
+    
+    @-o-keyframes cf3FadeInOut {
+    0% {
+    opacity:1;
+    }
+    45% {
+    opacity:1;
+    }
+    55% {
+    opacity:0;
+    }
+    100% {
+    opacity:0;
+    }
+    }
+    
+    @keyframes cf3FadeInOut {
+    0% {
+    opacity:1;
+    }
+    45% {
+    opacity:1;
+    }
+    55% {
+    opacity:0;
+    }
+    100% {
+    opacity:0;
+    }
+    }
+    
+    .img_container .top img {
+    -webkit-animation-name: cf3FadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-direction: alternate;
+    
+    -moz-animation-name: cf3FadeInOut;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 1s;
+    -moz-animation-direction: alternate;
+    
+    -o-animation-name: cf3FadeInOut;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 1s;
+    -o-animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    }
+
+
+    /* Site */
+
+    .site
+    {
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .site__button
+    {
+        border-radius: 16px;
+        border: none;
+        background-image: linear-gradient( 90deg, rgb(245,123,32) 0%, rgb(241,87,34) 100%);
+        width: 160px;
+        height: 36px;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 999;
+        position: absolute;
+        top: 150px;
+        left: 46%;;    }
+
+    .site__button a
+    {
+        font-family: $font-family-bold;
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 25px;
+        padding-top: 5px;
+    }
+
+    .site__content img
+    {
+        width: 100%;
+        position: relative;
+    }
+      
+
+    .iframe
+    {
+        width: 100%;
+        min-height: 100vh;
+        margin-top: -10px;
+        overflow-y: hidden;
+    }
+
+    .iframe iframe
+    {
+        width: 100%;
+        min-height: 100vh;
+        border: none;
+        }
+
+        iframe[seamless]{ 
+
+            overflow: hidden; 
+        } 
+
+    .stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+    }

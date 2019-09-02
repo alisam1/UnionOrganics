@@ -1,0 +1,55 @@
+@import "variables.scss";
+@import "blocks/normalize.scss";
+@import "blocks/container.scss";
+@import "blocks/about.scss";
+@import "blocks/target.scss";
+@import "blocks/logo.scss";
+@import "blocks/firm.scss";
+@import "blocks/card.scss";
+
+
+
+@font-face {
+    font-family: "Bebas-Light";
+    src: url("../fonts/bebasneuelight.ttf") format('ttf'),
+         url("../fonts/bebasneuelight.woff") format('woff'),
+         url("../fonts/bebasneuelight.woff2") format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas-Bold";
+    src: url("../fonts/bebasneuebold.ttf") format('ttf'),
+         url("../fonts/bebasneuebold.woff") format('woff'),
+         url("../fonts/bebasneuebold.woff2") format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/opensanslight.ttf") format('ttf'),
+       url("../fonts/opensanslight.woff") format('woff'),
+       url("../fonts/opensanslight.woff2") format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+  @font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/opensans.ttf") format('ttf'),
+         url("../fonts/opensans.woff") format('woff'),
+         url("../fonts/opensans.woff2") format('woff2');
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../fontsopensansbold.ttf") format('ttf'),
+         url("../fonts/opensansbold.woff") format('woff'),
+         url("../fonts/opensansbold.woff2") format('woff2');
+      font-weight: 700;
+      font-style: normal;
+  }

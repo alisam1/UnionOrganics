@@ -1,0 +1,26 @@
+.card
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px;
+}
+
+.left__card
+{
+    background-image: url("../img/left_card.png");
+    background-color: #000;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+
+.right__card
+{
+    background-image: url("../img/right_card.png");
+    background-size: cover;
+    width: 50%;
+}
