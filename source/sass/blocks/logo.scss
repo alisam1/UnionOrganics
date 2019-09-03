@@ -60,3 +60,18 @@
     text-align: center;
 }
 
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+    .logo__content
+    {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+
+    .logo__info
+    {
+        margin-bottom: 30px;
+    }
+     
+}

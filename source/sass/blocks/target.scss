@@ -83,3 +83,51 @@ li span {
  color: #fff;
  padding-left: 30px;
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    li span
+    {
+        padding-left: 10px;
+    }
+
+    
+.target-left::after
+{
+    left: 180px;
+}
+
+.target-left, .target-right
+{
+    width: 48%;
+}
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+    .target
+{
+    height: 820px;
+
+}
+
+
+    
+.target__content
+{
+    flex-direction: column;
+}
+
+.target-left, .target-right
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.target-left::after
+{
+    left: 80px;
+}
+}
+

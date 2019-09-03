@@ -213,7 +213,7 @@
         justify-content: center;
         z-index: 999;
         position: absolute;
-        top: 150px;
+        top: 195px;
         left: 46%;;    }
 
     .site__button a
@@ -256,4 +256,92 @@
     .stop-scrolling {
         height: 100%;
         overflow: hidden;
+    }
+
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+
+        .firm__block
+        {
+            width: 200px;
+            height: 220px;
+            box-shadow: 0px 6px 49px 0px rgba(0, 0, 0, 0.14);
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .img_container
+        {
+            width: 200px;
+            height: 220px;
+            box-shadow: 0px 6px 49px 0px rgba(0, 0, 0, 0.14);
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .top img 
+        {
+            width: 200px;
+            height: 220px;
+        }
+
+        .bottom img 
+        {
+            width: 200px;
+            height: 220px;
+        }
+
+        .top span
+        {
+            top: 130px;
+        }
+
+        .bottom span
+        {
+            top: 130px;
+        }
+
+        .site
+        {
+            min-height: auto;
+        }
+
+        .site__button
+        {
+            top: 255px;
+            left: 40%;
+        }
+
+    }
+    
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+
+        .firm__text
+        {
+            width: 70%;
+        }
+
+        .firm__content
+        {
+            flex-direction: column;
+        }
+
+        .img_container
+        {
+            margin-bottom: 20px;
+        }
+
+        .site
+        {
+            min-height: auto;
+        }
+
+
+        .site__button
+        {
+            top: 315px;
+            left: 25%;
+        }
+    
+     
     }

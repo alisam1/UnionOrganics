@@ -24,3 +24,16 @@
     background-size: cover;
     width: 50%;
 }
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .card
+    {
+        flex-direction: column;
+    }
+    
+    .left__card, .right__card
+    {
+        width: 100%;
+        height: 300px;
+    }
+}
