@@ -105,6 +105,8 @@
     -o-transition: opacity  0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
     }
+
+    
     
     @-webkit-keyframes cf3FadeInOut {
     0% {
@@ -189,6 +191,56 @@
     animation-duration: 1s;
     animation-direction: alternate;
     }
+
+    
+.img_container .top img {
+    -webkit-animation-name: cf3FadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-direction: alternate;
+        
+    -moz-animation-name: cf3FadeInOut;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 1s;
+    -moz-animation-direction: alternate;
+        
+    -o-animation-name: cf3FadeInOut;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 1s;
+    -o-animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+       
+.img_container .top img {
+    -webkit-animation-name: cf3FadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-direction: alternate;
+            
+    -moz-animation-name: cf3FadeInOut;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 1s;
+    -moz-animation-direction: alternate;
+            
+    -o-animation-name: cf3FadeInOut;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 1s;
+    -o-animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+     }
 
 
     /* Site */
@@ -336,11 +388,17 @@
             min-height: auto;
         }
 
+        .site__content
+        {
+            position: relative;
+        }
+
 
         .site__button
         {
-            top: 315px;
-            left: 25%;
+            position: absolute;
+            top: -15px;
+            left: 30%;
         }
     
      
