@@ -19,7 +19,7 @@ var wow = new WOW(
 
 
 
-  /* View */
+  /* View 
     document.getElementById("line");
       TweenLite.to(bar, 0.5, {width:"60px", height:"1px",  delay:1});
   
@@ -55,5 +55,82 @@ var wow = new WOW(
 
       document.getElementById("line11");
       TweenLite.to(bar11, 1.5, {width:"1px", height:"15px",  delay:1.5});
+      */
+/*
+      $(function(){
+        setTimeout(function() {
+            $('.line-board').addClass("absolut")
+        }, 200);
+    });
+*/
+/* Методы для анимации при скролле */
+function isPartiallyVisible(el) {
+  var elementBoundary = el.getBoundingClientRect();
 
+  var top = elementBoundary.top;
+  var bottom = elementBoundary.bottom;
+  var height = elementBoundary.height;
+  console.log(((top + height >= 0) && (height + window.innerHeight >= bottom)))
+  return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+}
+
+function isFullyVisible(el) {
+  var elementBoundary = el.getBoundingClientRect();
+
+  var top = elementBoundary.top;
+  var bottom = elementBoundary.bottom;
+
+  return ((top >= 0) && (bottom <= window.innerHeight));
+}
+
+ function animationBox() {
+  var bigPack = document.querySelector(".big-pack__content");
+  var lines = bigPack.querySelectorAll("[data-scroll]");
+  console.log(lines);
+  console.log(bigPack);
+  if(bigPack) {
+      if (isPartiallyVisible(bigPack)) {
+        console.log("1")
+          lines.forEach(line => {
+            line.classList.add("absolut");
+          });
+      } else {
+        console.log("2")
+        lines.forEach(line => {
+          line.classList.remove("absolut");
+        });
+      }
+  }
+
+  if(bigPack) {
+    if (isPartiallyVisible(bigPack)) {
+        lines.forEach(path => {
+          path.classList.add("path");
+        });
+    } else {
+      lines.forEach(path => {
+        path.classList.remove("path");
+      });
+    }
+}
+}
+
+animationBox();
+
+ function animationScroling() {
+  var isScrolling = false;
+
+  window.addEventListener("scroll", throttleScroll, false);
   
+  function throttleScroll(e) {
+      if (isScrolling == false) {
+          window.requestAnimationFrame(function() {
+              animationBox();
+              isScrolling = false;
+          });
+      }
+      isScrolling = true;
+  }
+}
+
+animationScroling();
