@@ -1,3 +1,89 @@
+/* NEW */
+
+.container {
+  display: flex;
+}
+
+.firm__block{
+  position: relative;
+   width: 230px;
+    height: 250px;
+    box-shadow: 0px 6px 49px 0px rgba(0, 0, 0, 0.14);
+  margin-right: 10px;
+}
+
+.firm__block span 
+{
+    position: absolute;
+    background-color: #fff;
+    width: 125px;
+    height: 90px;
+    top: 160px;
+    font-family: $font-family-bold;
+    color: #3a3a3a;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-left: 35px;
+    padding-right: 20px;
+    padding-top: 20px;
+    z-index: 9999;
+}
+
+.firm__block--mango
+{
+    background-image: url("../img/mango.png")
+}
+
+
+.firm__block--pin
+{
+    background-image: url("../img/pin.png")
+}
+
+
+.firm__block--ocean
+{
+    background-image: url("../img/ocean.png")
+}
+
+.firm__block::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  animation-name: opaci;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  left: 0;
+}
+
+.mango:after {
+  background: #d9415b;
+  animation-delay: 0s;
+  z-index: 9998;
+}
+
+.pin::after {
+  background: #f7c752;
+  animation-delay: 1s;
+}
+
+.ocean::after {
+  background: #2f4d88;
+  animation-delay: 2s;
+}
+
+@keyframes opaci {
+  0% {opacity: 1}
+  33%{opacity: 1}
+  34%{opacity: 0}
+  100%{opacity: 0}
+}
+
+
 .firm__text
 {
     font-family: $font-family;
@@ -39,180 +125,6 @@
 {
     max-width: 230px;
 }
-
-.top
-{
-    position:relative;
-    }
-
-
-.top span 
-{
-    position: absolute;
-    background-color: #fff;
-    width: 125px;
-    height: 90px;
-    top: 160px;
-    font-family: $font-family-bold;
-    color: #3a3a3a;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    padding-left: 35px;
-    padding-right: 20px;
-    padding-top: 20px;
-}
-
-
-.bottom
-{
-    position:relative;
-    }
-
-
-.bottom span 
-{
-    position: absolute;
-    background-color: #fff;
-    width: 125px;
-    height: 90px;
-    top: 160px;
-    font-family: $font-family-bold;
-    color: #3a3a3a;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-
-/* Img rotate */
-
-.img_container {
-    position:relative;
-    width: 230px;
-    height: 250px;
-    margin:0 auto;
-    box-shadow: 0px 6px 49px 0px rgba(0, 0, 0, 0.14);
-    }
-    
-    .img_container img {
-    position:absolute;
-    left:0;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity  0.5s ease-in-out;
-    -o-transition: opacity  0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-    }
-
-    
-    
-    @-webkit-keyframes cf3FadeInOut {
-    0% {
-    opacity:1;
-    }
-    45% {
-    opacity:1;
-    }
-    55% {
-    opacity:0;
-    }
-    100% {
-    opacity:0;
-    }
-    }
-    
-    @-moz-keyframes cf3FadeInOut {
-    0% {
-    opacity:1;
-    }
-    45% {
-    opacity:1;
-    }
-    55% {
-    opacity:0;
-    }
-    100% {
-    opacity:0;
-    }
-    }
-    
-    @-o-keyframes cf3FadeInOut {
-    0% {
-    opacity:1;
-    }
-    45% {
-    opacity:1;
-    }
-    55% {
-    opacity:0;
-    }
-    100% {
-    opacity:0;
-    }
-    }
-    
-    @keyframes cf3FadeInOut {
-    0% {
-    opacity:1;
-    }
-    45% {
-    opacity:1;
-    }
-    55% {
-    opacity:0;
-    }
-    100% {
-    opacity:0;
-    }
-    }
-
-       
-.img_container .top img {
-    -webkit-animation-name: cf3FadeInOut;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-direction: normal;
-            
-    -moz-animation-name: cf3FadeInOut;
-    -moz-animation-timing-function: ease-in-out;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-duration: 1s;
-    -moz-animation-direction: normal;
-            
-    -o-animation-name: cf3FadeInOut;
-    -o-animation-timing-function: ease-in-out;
-    -o-animation-iteration-count: infinite;
-    -o-animation-duration: 1s;
-    -o-animation-direction: normal;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-direction: normal;
-     }
-
-     #img_one .top img
-     {
-         animation-delay: 3s;
-         animation-duration: 1s;
-     }
-
-     #img_two .top img
-     {
-         animation-delay: 4s;
-         animation-duration: 1s;
-     }
-
-
-     #img_three .top img
-     {
-         animation-delay: 5s;
-         animation-duration: 1s;
-     }
-
-
 
     /* Site */
 
@@ -338,6 +250,12 @@
     }
     
     @media screen and (min-width: 0px) and (max-width: 767px) {
+
+        .firm__block
+        {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
 
         .firm__text
         {
