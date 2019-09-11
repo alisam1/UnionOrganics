@@ -63,7 +63,12 @@
     }
 }
 
-.target-left::after
+.target-left ul
+{
+    position: relative;
+}
+
+.target-left ul::after
 {
     content: "";
     background-image: url("../img/ingir.png");
@@ -71,7 +76,7 @@
     height: 380px;
     position: absolute;
     bottom: 0px;
-    top: -30px;
+    top: -90px;
     left: 350px;
 }
 
@@ -102,6 +107,18 @@ li span {
 {
     width: 48%;
 }
+
+.target-left ul::after
+{
+    content: "";
+    background-image: url("../img/ingir.png");
+    width: 200px;
+    height: 380px;
+    position: absolute;
+    bottom: 0px;
+    top: -90px;
+    left: 180px;
+}
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
@@ -116,6 +133,7 @@ li span {
 {
     width: 70%;
     margin: 0 auto;
+    padding-top: 60px;
 }
     
 .target__content
@@ -129,9 +147,48 @@ li span {
     margin: 0 auto;
 }
 
+.target-right
+{
+    padding-top: 20px;
+}
 .target-left::after
 {
     left: 80px;
+}
+
+.target-left__text
+{
+    padding-top: 0;
+}
+
+.target-left__text ul
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.target-left__text ul li
+{
+    padding-bottom: 10px;
+}
+
+.target-left__text ul span
+{
+    float: inline-start;
+    padding-left: 0;
+}
+
+.target-left ul::after
+{
+    display: none;
+}
+
+.target-left__text--yellow, .target-right__text--yellow {
+
+    padding-bottom: 20px;
+
 }
 }
 

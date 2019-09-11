@@ -6,29 +6,30 @@
 
 .pack-top
 {
+    width: 100%;
     max-width: 800px;
-    height: 430px;
+    height: 520px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background: url("../img/pack_bg.png") 100% 100% no-repeat; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: right;
 }
+
 
 .pack-top .top__info
 {
     font-family: $font-family;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 30px;
     color: #fff;
     position: relative;
-    width: 400px;
-    padding-top: 170px;
-}
+    width: 50%;
+    padding-top: 100px;
 
-img.top__img
-{
-    width: 500px;
-    height: 430px;;
 }
 
 .pack-bottom
@@ -61,6 +62,7 @@ img.top__img
     .pack-top
     {
         flex-direction: column;
+        background-size: contain;
     }
 
     .pack-top .top__info
